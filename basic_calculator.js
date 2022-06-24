@@ -1,6 +1,21 @@
-let a =5;
-let b =3;
-console.log(`the addition is ${a+b} `);
-console.log(`the subtraction is ${a-b} `);
-console.log(`the multiplication is ${a*b} `);
-console.log(`the division is ${a/b} `);
+const a =  parseFloat(prompt("enter a number : "));
+let op = prompt("enter a operation "); 
+const b = parseFloat(prompt("enter a number : ")); 
+var result;
+switch(op){
+    case "+":
+        result= a+b;
+        break;
+    case"-":
+        result=a-b;
+        break;
+    case "*":
+        result =a*b;
+        break;
+    case "/":
+        result=(b===0)?b/a:a/b;
+        break;
+    default:
+        console.log("check your operator ");
+}
+console.log("the result is given as : ",result);
