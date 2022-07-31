@@ -1,0 +1,214 @@
+:root{
+    --Red: hsl(0, 100%, 74%) ;
+      --Green: hsl(154, 59%, 51%);
+     --Blue: hsl(248, 32%, 49%);
+     --Dark-Blue: hsl(249, 10%, 26%) ;
+   --Grayish-Blue: hsl(246, 25%, 77%);
+
+
+}
+@font-face{
+    font-family:Poppins;
+    src:url(https://fonts.google.com/specimen/Poppins);
+}
+body{
+    background-color:var(--Red);
+    font-size:1em;
+    background-image:url("/Registration-form/images/bg-intro-desktop.png");
+    margin-left:10%;
+        margin-right:10%;
+     font-family:"Poppins",sans-serif;
+     background-size:cover;
+}
+.container{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    width:auto;
+    margin-top:150px;
+    justify-content: space-between;
+    max-width:1440px;
+    min-height:100px;
+    flex-wrap:wrap;
+}
+.left-content{
+    color:white;
+    flex-basis:45%;
+    text-align:left;
+    padding:40px;
+
+}
+.left-content h2{
+    font-size:48px;
+    line-height:1.2;
+    margin-bottom:10px;
+    font-weight:700;
+    margin:auto 0;
+}
+.left-content p{
+    font-weight:400;
+    line-height:25px;
+    font-size:1em;
+}
+.left-content{
+    flex-basis:45%;
+}
+/* styling for the components on the right column */
+header{
+    width:unset;
+    padding:unset;
+    margin:0 auto;
+    max-width:90%;
+    padding:50vh;
+}
+.form-container{
+    max-height:70vh;
+    background-color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+}
+
+span{
+    display:inline-block;
+}
+
+input{
+    padding:20px;
+    border-radius:10px;
+    width:90%;
+    outline:none;
+    margin-top:20px;
+    margin-bottom:10px;
+    color: black;/* rgb(249, 247, 247) */
+    border: 1px thin rgb(249, 247, 247);
+    font-size:1em;
+    min-height:1.2em;
+}
+input::placeholder{
+    font-size:1em;
+    font-weight:500;
+    color:hsla(249,10%,26%,0.678);
+}
+header{
+    text-align:center;
+    margin-bottom:20px;
+    padding:20px;
+    background-color:var(--Blue);
+    color:white;
+    border-radius:15px;
+    box-shadow: 0 5px rgba(62,60 73,0.3) ;
+    font-weight:400;
+}
+.btn-green{
+    background-color:var(--Green);
+    border:none;
+    padding:20px;
+    width:100%;
+    color:white;
+    font-weight:400;
+    margin-top:30px;
+    align-items: flex-end;
+    letter-spacing:2px;
+    cursor:pointer;
+    box-shadow:0 4px hsl(154,56%,44%);
+    text-transform: uppercase;
+}
+.btn-green:hover{
+    box-shadow:2px 2px 5px;
+    background-color:hsl(154 56%,50%);
+    color:white;
+}
+ .red{
+    color:var(--Red);
+    display:inline;
+}
+/* styling for invalid icons */
+label input:focus:invalid ~.error::after{
+    content:attr(data-error);
+    position:absolute;
+    bottom:0;
+    font-style:12px;
+    font-weight:700;
+    right:0;
+    padding: 0 0 10px 0;
+    margin:0 7px 0  0;
+    color:var(--Red);
+}
+label input:focus{
+    color:var(--Dark-Blue);
+    font-size: 1em;
+}
+label input:focus:invalid ~.error{
+    position:relative;
+    margin:25px;
+}
+label input:required:focus:invalid {
+    border:3px solid rgb(255,122,122);
+    background-image:url(/Registration-form/images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position:right;
+    background-origin:content-box;
+    border-radius:0;
+}
+label input:invalid+span{
+    display:inline;
+    color:var(--Red);
+    font-size:0.8em;
+}
+ /* label input:invalid{
+    border:3px solid var(--Red);
+    border-radius:0;
+} */
+@media(max-width:375px){
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+    body{
+        background-image:url(/Registration-form/images/bg-intro-mobile.png);
+        margin:0 auto;
+        background-size:cover;
+        background-position:center;
+    }
+    header{
+     padding:35px 0;
+    }
+    .left-content h2{
+        margin-bottom:15px;
+        font-size:30px;
+    }
+    .left-content p{
+        width:80%;
+    }
+    
+    .left-content h2,p{
+        margin:0 auto 30px auto;
+        text-align:center;
+    }
+    .right-content{
+        flex-wrap:wrap;
+        flex-basis:100%;
+        text-align:center;
+    }
+    .form-container{
+        max-height:140vh;
+        padding:10px;
+        width:90%;
+        margin:0 auto;
+    }
+    input{
+        width:80%;
+        height:20px;
+        outline:none;
+        font-size:10px;
+       
+    }
+    input::placeholder{
+        font-size:1.5em;
+    }
+    .btn-green{
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+}
