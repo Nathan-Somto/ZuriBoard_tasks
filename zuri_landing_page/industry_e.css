@@ -1,0 +1,56 @@
+:root{
+    --pink:rgba(255,248,229);
+}
+body{
+    margin:0;
+    padding:0;
+}
+#nav-bar{
+    display:flex;
+    max-height:20vh;
+    background-color:#fff;
+    color:#000;
+    justify-content: space-evenly;
+}
+#nav-bar img{
+    max-width:50%;
+    justify-self: flex-start;
+   
+   
+}
+.nav-items{
+    display:flex;
+    justify-content:space-evenly;
+    width:40%;
+    margin-left:20%;
+    
+}
+.nav-items li {
+    list-style-type: none;
+}
+.countries{
+
+}
+.talents {
+    align-items: center;
+    background: #fff!important;
+    border-radius: 8px!important;
+    box-shadow: 0 8px 30px hsla(0,0%,48%,.16)!important;
+    color: #787878!important;
+    display: flex;
+    font-family: Graphik!important;
+    font-size: 18px!important;
+    font-style: normal!important;
+    font-weight: 400!important;
+    height: 100%!important;
+    justify-content: center;
+    line-height: 33px!important;
+    padding: 5px!important;
+    text-align: center;
+    
+}
+.talents:hover{
+    transform:translateY(-15%);
+    transition: transform .3s ease /* webkit-transform .3s ease */!important;
+
+}

@@ -1,0 +1,240 @@
+.join{
+    font-size:14px !important;
+    word-spacing:3;
+}
+:root {
+    --red:#E7332B;
+    --white: #fff;
+    --zuri:#FFFAFA;
+    --card-p:#514949;
+}*{
+    box-sizing:border-box;
+}
+a{
+    color:var(--red);
+    text-decoration:none;
+    display:inline;
+}
+a:hover{
+    color:var(--red);
+}
+section{
+    display:block;
+}
+.first-container {
+    height: 800px;
+    background-image:url("https://zuri.team/img/hero-bg.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.center-image{
+    margin-bottom:69px;
+    padding-top:69px;
+    margin:auto;
+    display:flex;
+}
+.hero{
+    text-align:center;
+    margin:0 auto;
+    padding:10px;
+    max-width:700px;
+}
+.btn-div{
+    margin-top:85px;
+    position:relative;
+    left:35%
+}
+.center-image img{
+    margin:auto;
+}
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align:left;
+    font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin:0;
+    width:100vw;
+    overflow-x:hidden;
+}
+.btn-red{
+    background-color:var(--red);
+    color:var(--white);
+    margin-right:24px;
+    border:1px solid var(--red);
+    padding:11px 28px;
+}
+.btn-red:hover{
+    border:1px solid var(--red);
+    color:var(--red);
+    background-color:var(--white);
+}
+.btn-red-outline{
+    border:1px solid var(--red);
+    color:var(--red);
+    background-color:var(--white);
+   
+    padding:11px 28px;
+}
+.btn-red-outline:hover{
+    background-color:var(--red);
+    color:var(--white);
+    border:2px solid var(--red);
+  
+}
+
+/* Programs Section */
+.programs-container{
+    overflow:hidden;
+    background-color:var(--white);
+    margin-top:141px;
+}
+.heading{ 
+    color:var(--red);
+    font-size:0.8em;
+    line-height:24px;
+}
+.slogan{
+    font-size: 1.5em;
+    line-height:40px;
+    color:(--card-p);
+}
+
+.my-container{
+    width:100vw;
+}
+.program-card{
+     max-width:100%;
+    background-color:var(--zuri);
+    padding: 3.8em 2.9em  5.1em 2.3em;
+}
+.program-card-zed{
+    position:relative;
+    z-index:1;
+}
+.program-card img{
+    margin-bottom:48px;
+}
+
+.card-bg-svg-1{
+    width:100%;
+    position:absolute;
+    left:-120px;
+    top:-75px;
+    z-index:-1;
+} 
+.card-bg-svg-2{
+    width:90%;
+    position:absolute;
+    right:-120px;
+    top:-75px;
+    z-index:-1;
+} 
+.d-none{
+    display:none;
+}
+
+.program-card p{
+    color:var(--card-p);
+   line-height:24px;
+   opacity:0.9;
+   font-size:1em;
+   text-align:left;
+
+}
+.program-card a{
+    font-size:0.8em;
+}
+ img{
+    vertical-align:middle;
+    border-style:none;
+} 
+
+
+
+
+
+/* Contact Links */
+.contact-section{
+    margin-top:215px;
+}
+.contact-links{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.contact-links-2{
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+hr{
+    width:80%;
+    border-bottom:3px solid var(--card-p);
+    margin:60px auto 30px auto;
+
+}
+footer{
+    text-align:center;
+    margin-bottom:48px;
+}
+.social-icons img{
+   width:18px;
+    margin-right:5px;
+}
+
+
+
+/* Responsive code */
+@media screen and (max-width:768px){
+    body{
+        width:100vw;
+        overflow-x: hidden;
+    }
+    .contact-section img:nth-child(1){
+        margin-right:25%;
+        margin-left:25%;
+        width:50%;
+        margin-bottom:10%;
+        align-items: center;
+    }
+    .contact-section{
+        font-size:1.1em;
+    }
+    footer{
+        font-size:1.5em;
+    }
+    .contact-links-2{
+        align-items:center;
+        text-align: center;
+    }
+    .program-card{
+        width:80%;
+        margin:0 auto;
+    }
+    .social-icons{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+
+    }
+    .socail-icons a{
+        width:0.0125vw;
+    }
+    .btn-red{
+        margin-bottom:20px;
+        margin-left:10px; 
+    }
+    .btn-div{
+        left:20% !important;
+    }
+    
+}
+@media (min-width:1200px){
+    .d-xl-none{
+        display:block;
+    }
+}
